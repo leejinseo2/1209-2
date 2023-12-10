@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>HTML5 with Hanbit</title>
-        < !-- 초기화 -- ! >
         <style>
           *  {
                 margin:0; padding: 0;
@@ -14,7 +13,6 @@
             li { list-style: none; }
             html { background: #f7f5f5;}
         </style>
-        < --헤더-- >
         <style>
             #main-header {
                 height: 40px;
@@ -33,7 +31,6 @@
                 text-indent: -9999px;
             }
         </style>
-        < 풀다운 >
         <style>
             .outer-menu {
                 float: left;
@@ -66,7 +63,6 @@
 
             .inner-menu a:hover { background: #E1DFDF;}
         </style>
-        < --내비게이션 메뉴-- >
         <style>
             #main-navigation {
                 height: 30px;
@@ -94,7 +90,6 @@
                 border-radius: 2px;
             }
         </style>
-        <--검색 양식-->
         <style>
             .header-search-form {
                 height: 26px;
@@ -131,7 +126,6 @@
                 display: inline-block;
             }
         </style>
-        <종이 스타일>
         <style>
             .paper {
                 width: 190px;
@@ -164,7 +158,6 @@
                 margin-left: 10px;
             }
         </style>
-        <섹션>
         <style>
             #main-section {
                 width: 920px;
@@ -199,7 +192,6 @@
                 #main-section { width: 1380px; }
             }
         </style>
-        <라이트박스>
         <style>
             #darken-background {
                 position: absolute;
@@ -228,9 +220,8 @@
             .user-infromation-text { float: right; width: 620px;}
             .lightbox-splitter { margin: 10px 0; }
         </style>
-        // 풀다운 메뉴
+        <script>
         $(document).ready(function () {
-            // 풀다운 메뉴
             $('.outer-menu').hover(function () {
                 $(this).find('.inner-menu').css('display,''block');
             }, function () {
@@ -238,13 +229,13 @@
             });
          });
          $(document).ready(function () {
-            //이미지 로드 확인
             $('#main-section').masonry({
                 itemSelector: '.paper',
                 columnWidth: 230,
                 isAnimated: true
             });
          });
+        </script>
         <script src = "https://code.jqery.com/jqery-3.4.1.min.js"></script>
         <script src = "jquery.masonry.min.js"></script>
         <script src = "jquery.imagesloaded.min.js"></script>
@@ -253,7 +244,6 @@
         </script>
     </head>
     <body>
-        < 헤더 >
         <header id="main-header">
             <div class = "header-search-form">
                 <form>
@@ -289,7 +279,6 @@
                 </ul>
             </div>
         </header>
-        <내비게이션 메뉴>
         <nav id="main-navigation">
             <ul>
                 <li><a href="#">Following</a></li>
@@ -299,7 +288,6 @@
                 <li><a href="#">Gift</a></li>
             </ul>
         </nav>
-        <--본문영역-->
         <section id="main-section">
             <div class="paper">
                 <div class="paper-holder">
